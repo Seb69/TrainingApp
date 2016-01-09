@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.launching.macosx.MacOSXType/Java SE 7 [1.7.0_79]">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/ANDRE/Desktop/5IRC 5ETI DP Projet e-campus 1516/google-api-java-client-dev.zip"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/ANDRE/Desktop/5IRC 5ETI DP Projet e-campus 1516/gson-2.5.jar"/>
+	<classpathentry kind="lib" path="/Users/ANDRE/Desktop/CLOUD COMPUTING/ParseData.jar"/>
+	<classpathentry kind="lib" path="/Users/ANDRE/Desktop/5IRC 5ETI DP Projet e-campus 1516/json_simple-1.1.jar"/>
+	<classpathentry kind="lib" path="/Users/ANDRE/Desktop/5IRC 5ETI DP Projet e-campus 1516/json-simple.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

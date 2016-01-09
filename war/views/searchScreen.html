@@ -1,0 +1,43 @@
+ <!-- ------------------------------------------- HEADER ZONE ------------------------------------------- -->
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class=" col-md-10 col-sm-10 col-xs-10 ">
+            <form class="navbar-form navbar-left"  style="width:100%" role="search" >
+                <button type="submit" class="btn btn-default" ng-click="onSearch()"  ng-href="#/searchResult.html">Search</button>
+                <div class="form-group"  style="width:90%">
+                    <input type="text"  ng-model="search"  press-enter="onSearch()" style="width:100%" class="form-control" placeholder="Search">
+                </div>
+          </form>
+        </div>
+          
+        <div class=" col-md-2 col-sm-2 col-xs-2 " ng-controller="signInGoogle">
+            <form class="navbar-form navbar-left"  style="width:100%" role="search">
+           <div class="g-signin2" data-onsuccess="onSignIn"></div>
+           <div id="Name" style="color:white">Name:</div>
+           <div id="Email" style="color:white">Email: </div>
+            	
+
+          </form>
+        </div>
+      </nav>
+      <!-- ------------------------------------------- HEADER ZONE END ------------------------------------------- -->
+   
+      
+	      <div ng-hide="displayResult" >
+			<div ng-include="'views/searchScreenDashboard.html'"  onload="onLoadDashboard()"></div>   
+	      </div>
+	      
+	      <div ng-hide="!displayResult">
+			<div ng-include="'views/searchResult.html'" ></div>
+		  </div>
+	
+      <!-- ------------------------------------------- FOOTER ZONE ------------------------------------------- -->
+      <nav  >
+        <div >
+            <form class="navbar-form navbar-left"   >
+            <a ng-href="#/addTraining.html">
+                <button type="submit" class="btn btn-danger"> <span class="glyphicon glyphicon-plus-sign"></span> </button>
+               <label style="color:BLACK">Add a Training Plan</label>
+                </a>
+          </form>
+        </div>
+      </nav>

@@ -1,0 +1,46 @@
+        <div class="row">
+          <div class=" col-md-1 col-sm-0 col-xs-0 " ></div>
+        <div class=" col-md-9 col-sm-12 col-xs-12 " >
+          <div class="jumbotron" style="padding:10px">
+              
+              <div class="row">
+                  <div class=" col-md-1 col-sm-1 col-xs-1 " >
+                       <button type="button" class="btn btn-success" id="addExe" ng-click="addExercice(exercice)" >Add an Exercice</button>
+                   </div>
+                 <div class=" col-md-12 col-sm-12 col-xs-12 " ></div>
+              </div>
+              <div class="row">
+                  <div class=" col-md-2 col-sm-0 col-xs-0 " ></div>
+                    <div class=" col-md-2 col-sm-2 col-xs-12 ">
+                        <label for="titleDescription" >Ex. Title</label>  
+                    </div>
+                    <div class=" col-md-6 col-sm-6 col-xs-12 ">
+                        <input  class="form-control" id="titleDescription" placeholder="Enter your exercice title" ng-model="exercice.title">
+                    </div>
+                    <div class=" col-md-2 col-sm-4 col-xs-12 ">
+                        <div class="input-group">
+                            <input type="text" id="hourTime" class="form-control" ng-model="exercice.time">
+                            <span class="input-group-addon" style="padding:0px">:</span>
+                           <input type="text" id="minutesTime" class="form-control">
+                          <span class="input-group-addon" style="padding:0px">:</span>
+                          <input type="text" id="repetition" class="form-control">
+
+                        </div>
+                    </div>
+                </div>
+              <div class="row" style="margin-top:10px">
+               <div class=" col-md-2 col-sm-0 col-xs-0 " ></div>
+                <div class=" col-md-2 col-sm-2 col-xs-12 ">
+                    <label for="exerciceDescription">Ex. Description</label>  
+                </div>
+                <div class=" col-md-6 col-sm-6 col-xs-12 ">
+                    <!--<input type="email" class="form-control" id="exerciceDescription" placeholder="Enter your exercice title">-->
+                    <textarea id="exerciceDescription" class="form-control" rows="4" ng-model="exercice.description"></textarea>
+                </div>
+                  <div class=" col-md-2 col-sm-4 hidden-xs">
+                       <h1 style="text-align: center;"> <span class="glyphicon glyphicon-time"></span> </h1>
+                    </div>
+                </div>
+        </div>
+        </div>
+        </div>

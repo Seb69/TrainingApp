@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	
+    <servlet>
+		<servlet-name>welcomeMsg</servlet-name>
+		<servlet-class>aubourg.andree.WelcomeMsg</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>welcomeMsg</servlet-name>
+		<url-pattern>/addwelcome</url-pattern>
+	</servlet-mapping>
+	
+	  <servlet>
+		<servlet-name>checkCacheWelcomeMsg</servlet-name>
+		<servlet-class>aubourg.andree.CheckCacheWelcomeMsg</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>checkCacheWelcomeMsg</servlet-name>
+		<url-pattern>/checkwelcome</url-pattern>
+	</servlet-mapping>
+	
+	 <servlet>
+		<servlet-name>addTrainingServlet</servlet-name>
+		<servlet-class>aubourg.andree.AddTrainingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addTrainingServlet</servlet-name>
+		<url-pattern>/addTraining</url-pattern>
+	</servlet-mapping>
+	
+	
+		 <servlet>
+		<servlet-name>SearchTrainingByDomainServlet</servlet-name>
+		<servlet-class>aubourg.andree.SearchTrainingByDomainServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchTrainingByDomainServlet</servlet-name>
+		<url-pattern>/trainingDomain</url-pattern>
+	</servlet-mapping>
+	
+	
+		 <servlet>
+		<servlet-name>SearchServlet</servlet-name>
+		<servlet-class>aubourg.andree.SearchServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchServlet</servlet-name>
+		<url-pattern>/searchTraining</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>GetAllTrainings</servlet-name>
+		<servlet-class>aubourg.andree.GetAllTrainings</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAllTrainings</servlet-name>
+		<url-pattern>/trainings</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>GetAllExercices</servlet-name>
+		<servlet-class>aubourg.andree.GetAllExercices</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetAllExercices</servlet-name>
+		<url-pattern>/exercices</url-pattern>
+	</servlet-mapping>
+    
+	<servlet>
+		<servlet-name>ProjGoogleAppEngSport</servlet-name>
+		<servlet-class>aubourg.andree.ProjGoogleAppEngSportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProjGoogleAppEngSport</servlet-name>
+		<url-pattern>/projgoogleappengsport</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SearchExerciceByParentTitle</servlet-name>
+		<servlet-class>aubourg.andree.SearchExerciceByParentTitle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchExerciceByParentTitle</servlet-name>
+		<url-pattern>/searchExerciceByParentTitle</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>SearchExerciceByTitle</servlet-name>
+		<servlet-class>aubourg.andree.SearchExerciceByTitle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchExerciceByTitle</servlet-name>
+		<url-pattern>/searchExercice</url-pattern>
+	</servlet-mapping>
+	
+	
+			<servlet>
+		<servlet-name>SearchRSSFeedServlet</servlet-name>
+		<servlet-class>aubourg.andree.SearchRSSFeedServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchRSSFeedServlet</servlet-name>
+		<url-pattern>/searchRSS</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<threadsafe>true</threadsafe>
+	
+
+
+
+</web-app>
